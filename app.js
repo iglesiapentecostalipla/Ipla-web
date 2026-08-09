@@ -66,7 +66,7 @@ function viewInicio(){
   <section class="hero">
     <div class="hero-inner">
       <div>
-        <span class="hero-eyebrow">Iglesia Pentecostal Lámpara</span>
+        <span class="hero-eyebrow">Iglesia Pentecostal Lámpara Es A Mis Pies Tú Palabra</span>
         <h1>Predicación, revelación, enseñanza, noticias y<em>testimonio</em> a la luz de las Escrituras</h1>
         <p class="lead">Un espacio digital para exaltar a Dios y conocer lo que está haciendo en nuestra congregación: Mensajes en video, artículos, noticias todo en un mismo lugar.</p>
         <div class="hero-actions">
