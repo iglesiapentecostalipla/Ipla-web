@@ -20,7 +20,7 @@ const SITE_CONTENT = {
   noticias: [
     {
       id: "n1",
-      titulo: " "GRAN CULTO DE “RE-APERTURA” ",
+      titulo: " "GRAN CULTO DE 'RE-APERTURA' ",
       categoria: "Vida de iglesia",
       fecha: "2026-08-16",
       resumen: "Iniciamos un caminar en la senda del SEÑOR, festeja con nosotros la apertura estás invitad a celebrar con nosotros.",
