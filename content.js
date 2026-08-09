@@ -20,11 +20,12 @@ const SITE_CONTENT = {
   noticias: [
     {
       id: "n1",
-      titulo: "Nuevo ciclo de estudios bíblicos comienza este mes",
+      titulo: " "GRAN CULTO DE “RE-APERTURA” ",
       categoria: "Vida de iglesia",
-      fecha: "2026-08-01",
-      resumen: "Iniciamos un recorrido por el libro de los Salmos, con encuentros semanales abiertos a toda la congregación y visitantes.",
-      contenido: "Este es un texto de ejemplo. Reemplázalo con el contenido real de tu noticia: horarios, lugar, responsables y cualquier detalle que la congregación necesite conocer.",
+      fecha: "2026-08-16",
+      resumen: "Iniciamos un caminar en la senda del SEÑOR, festeja con nosotros la apertura estás invitad a celebrar con nosotros.",
+      contenido: "Por este medio les hacemos la cordial  invitación a acompañarnos, a estar en la presencia de nuestro DIOS dando Culto de inauguración de Casa para adorar su nombre. Este próximo 16 de agosto del presente año 2026. Dirección: C/ Fernandez  Dominguez #52, Los Frailes II. Santo Domingo Este."
+.",
       imagen: "",
       destacado: true
     },
