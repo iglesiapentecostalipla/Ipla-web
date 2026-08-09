@@ -67,7 +67,7 @@ function viewInicio(){
     <div class="hero-inner">
       <div>
         <span class="hero-eyebrow">Iglesia Pentecostal Lámpara</span>
-        <h1>Predicación, revelación, enseñanza, Noticias y<em>testimonio</em> a la luz de las Escrituras</h1>
+        <h1>Predicación, revelación, enseñanza, noticias y<em>testimonio</em> a la luz de las Escrituras</h1>
         <p class="lead">Un espacio digital para exaltar a Dios y conocer lo que está haciendo en nuestra congregación: Mensajes en video, artículos, noticias todo en un mismo lugar.</p>
         <div class="hero-actions">
           <a href="#" data-view="noticias" class="btn btn-gold">Ver noticias</a>
