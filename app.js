@@ -66,9 +66,9 @@ function viewInicio(){
   <section class="hero">
     <div class="hero-inner">
       <div>
-        <span class="hero-eyebrow">Iglesia Pentecostal Lámpara Es A Mis Pies Tu Pálabra</span>
-        <h1>Pálabra de DIOS, predicación, enseñanza, Noticias y <em>testimonio</em> a la luz de las Escrituras</h1>
-        <p class="lead">Un espacio digital para exaltar a Dios y conocer lo que está haciendo en nuestra congregación: Mensajes en video, artículos, noticias todo en un mismo lugar.</p>
+        <span class="hero-eyebrow">Iglesia Pentecostal Lámpara</span>
+        <h1>Noticias, palabra y <em>testimonio</em> a la luz de las Escrituras</h1>
+        <p class="lead">Un espacio digital para conocer lo que Dios está haciendo en nuestra congregación: noticias, artículos y mensajes en video, todo en un mismo lugar.</p>
         <div class="hero-actions">
           <a href="#" data-view="noticias" class="btn btn-gold">Ver noticias</a>
           <a href="#" data-view="videos" class="btn btn-outline">Ver videos</a>
@@ -262,27 +262,11 @@ function viewAcerca(){
   return `
   <div class="detail-wrap">
     <span class="eyebrow">Nuestra iglesia</span>
-    <h1>Iglesia Pentecostal Lámpara Es A Mis Pies Tu Pálabra</h1>
-    <p class="about-lede"> Salmos 119:105 — «Lámpara es a mis pies tu Pálabra, y lumbrera a mi camino»</p>
+    <h1>Iglesia Pentecostal Lámpara</h1>
+    <p class="about-lede">«Lámpara es a mis pies tu palabra, y lumbrera a mi camino» — Salmos 119:105</p>
     <div class="detail-body">
-      <p>Historia:  
-
-<p>Misión: la iglesia Lampara es a mis pies tu Pálabra, buscar las almas al predicar y esparcir el evangelio de Cristo "o la buena nueva de salvación"  y dirigir a un pueblo a la salvación compartiendo un evangelio limpio, no adulterado, agradable al SEÑOR y a SU CORDERO. Es tiempo de prepararse la venida del SEÑOR está mas cerca que nunca</p>
-<p>Visión: Que seamos un pueblo, "un cuerpo" preparado, apto para la venida del SEÑOR JESUCRISTO y haciendo la obra del SEÑOR estar listos para vivir eternamente con EL. Entregar al cordero en aquel día postrero una iglesia sin manchas ni arrugas. Siendo todos ovejas de su prado, en "Koinonia" los unos con los otros.</p>
-<p>Valores: La Iglesia Lámpara Es A Mis Pies Tú Pálabra tiene como fundamento creer que La biblia es Pálabra de DIOS, misma que es nuestra ley de fé, doctrina y nuestro manual de vida. Ser una Iglesia que testifique la grandeza de DIOS el poder de su evangelio, y el milagro del cambio en la vida del creyente.</p>
-<p>Paz y Santidad: Hebreos 12:14 Seguid la paz con todos, y la santidad, sin la cual nadie verá al Señor.</p>
-<p>Vivir la sana doctrina: 2 Timoteo 4:3 Porque vendrá tiempo cuando no sufrirán la sana doctrina, sino que teniendo comezón de oír, se amontonarán maestros conforme a sus propias concupiscencias,</p>
-<p>En Amor: 1 corintios 13: 8-10 8 El amor nunca deja de ser; pero las profecías se acabarán, y cesarán las lenguas, y la ciencia acabará. 9 Porque en parte conocemos, y en parte profetizamos; 10 mas cuando venga lo perfecto, entonces lo que es en parte se acabará.
-<p>Hablando el lenguaje del cielo y el terrenal.<p>Marcos 16:17 Y estas señales seguirán a los que creen: En mi nombre echarán fuera demonios; hablarán nuevas lenguas;</p> 
-<p>Hechos 2:1-4 1 Cuando llegó el día de Pentecostés, estaban todos unánimes juntos. 2 Y de repente vino del cielo un estruendo como de un viento recio que soplaba, el cual llenó toda la casa donde estaban sentados; 3 y se les aparecieron lenguas repartidas, como de fuego, asentándose sobre cada uno de ellos. 4 Y fueron todos llenos del Espíritu Santo, y comenzaron a hablar en otras lenguas, según el Espíritu les daba que hablasen
-<p>1 Corintios 13:1 Si yo hablase lenguas humanas y angélicas, y no tengo amor, vengo a ser como metal que resuena, o címbalo que retiñe.</p>
-<p>1. Corintios: 39-40 39 Así que, hermanos, procurad profetizar, y no impidáis el hablar lenguas; 40 pero hágase todo decentemente y con orden.</p>
-<p>Con señales, milagros y prodigios: Marcos 16:17 Y estas señales seguirán a los que creen: En mi nombre echarán fuera demonios; hablarán nuevas lenguas;</p>
-<p>Hechos 2:43 Y sobrevino temor a toda persona; y muchas maravillas y señales eran hechas por los apóstoles.</p>
-<p>Una boda, un esposo, una esposa.</p>
-<p>Mateo 19: 9-12 9 Y yo os digo que cualquiera que repudia a su mujer, salvo por causa de fornicación, y se casa con otra, adultera; y el que se casa con la repudiada, adultera 10 Le dijeron sus discípulos: Si así es la condición del hombre con su mujer, no conviene casarse. 11 Entonces él les dijo: No todos son capaces de recibir esto, sino aquellos a quienes es dado. 12 Pues hay eunucos que nacieron así del vientre de su madre, y hay eunucos que son hechos eunucos por los hombres, y hay eunucos que a sí mismos se hicieron eunucos por causa del reino de los cielos. El que sea capaz de recibir esto, que lo reciba.
-</p>
-      <p>Horarios de servicio: martes, jueves y sábado hora a partir de la 7 PM. estamos úbicados en la calle Fernandez Dominguez #52, Los Frailes II, Santo Domingo Este.  Nuestras redes sociales son: Facebook: iglesiapentecostalipla, Instagram: iglesiapentecostalipla, youtube: iglesiapentecostalipla, Tiktok: ipla iglesia pentecostal. Para oración y contacto Tel: 849-525-1871 .</p>
+      <p>Este es un espacio de ejemplo para contar la historia, visión y valores de la congregación. Reemplaza este texto en la función <code>viewAcerca()</code> del archivo app.js, o pídele a Claude que lo convierta en un campo editable dentro de content.js.</p>
+      <p>Añade aquí horarios de servicio, dirección, redes sociales y formas de contacto.</p>
     </div>
   </div>`;
 }
