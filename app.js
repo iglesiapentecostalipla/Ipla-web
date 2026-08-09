@@ -262,11 +262,39 @@ function viewAcerca(){
   return `
   <div class="detail-wrap">
     <span class="eyebrow">Nuestra iglesia</span>
-    <h1>Iglesia Pentecostal Lámpara</h1>
+    <h1>Iglesia Pentecostal Lámpara Es A Mis Pies Tu Palabra</h1>
     <p class="about-lede">«Lámpara es a mis pies tu palabra, y lumbrera a mi camino» — Salmos 119:105</p>
     <div class="detail-body">
-      <p>Este es un espacio de ejemplo para contar la historia, visión y valores de la congregación. Reemplaza este texto en la función <code>viewAcerca()</code> del archivo app.js, o pídele a Claude que lo convierta en un campo editable dentro de content.js.</p>
-      <p>Añade aquí horarios de servicio, dirección, redes sociales y formas de contacto.</p>
+      <p>Historia:  
+
+Misión: la iglesia Lampara es a mis pies tu palabra, buscar las almas al predicar y esparcir el evangelio de Cristo "o la buena nueva de salvación"  y dirigir a un pueblo a la salvación y a los brazos de su redentor, compartiendo un evangelio limpio, no adulterado, agradable al SEÑOR y a SU CORDERO. Es tiempo de prepararse la venida del SEÑOR está mas cerca que nunca,  Mateo: 25 5:7 "5 Y tardándose el esposo, cabecearon todas y se durmieron. 6 Y a la medianoche se oyó un clamor: ¡Aquí viene el esposo; salid a recibirle! 7 Entonces todas aquellas vírgenes se levantaron, y arreglaron sus lámparas."
+
+Visión: Que seamos un pueblo, "un cuerpo" preparado, apto para la venida del SEÑOR JESUCRISTO y haciendo la obra del SEÑOR estar listos para vivir eternamente con EL. Entregar al cordero en aquel día postrero una iglesia sin manchas ni arrugas. Siendo todos ovejas de su prado, en "Koinonia" los unos con los otros.
+
+Valores: La Iglesia Lámpara Es A Mis Pies Tú Palabra tiene como fundamento creer que La biblia es palabra de DIOS, misma que es nuestra ley de fé, doctrina y nuestro manual de vida. Siendo una Iglesia para testificar la grandeza de DIOS su evangelio y el cambio y milagro de su sacrificio en la vida del creyente.
+Paz y Santidad: 
+Hebreos 12:14 Seguid la paz con todos, y la santidad, sin la cual nadie verá al Señor.
+Vivir la sana doctrina: 
+2 Timoteo 4:3 Porque vendrá tiempo cuando no sufrirán la sana doctrina, sino que teniendo comezón de oír, se amontonarán maestros conforme a sus propias concupiscencias,
+En Amor: 1 corintios 13: 8-10 8 El amor nunca deja de ser; pero las profecías se acabarán, y cesarán las lenguas, y la ciencia acabará. 9 Porque en parte conocemos, y en parte profetizamos; 10 mas cuando venga lo perfecto, entonces lo que es en parte se acabará.
+Hablando el lenguaje del cielo y el terrenal.
+Marcos 16:17 Y estas señales seguirán a los que creen: En mi nombre echarán fuera demonios; hablarán nuevas lenguas; 
+
+Hechos 2:1-4 
+1 Cuando llegó el día de Pentecostés, estaban todos unánimes juntos. 2 Y de repente vino del cielo un estruendo como de un viento recio que soplaba, el cual llenó toda la casa donde estaban sentados; 3 y se les aparecieron lenguas repartidas, como de fuego, asentándose sobre cada uno de ellos. 4 Y fueron todos llenos del Espíritu Santo, y comenzaron a hablar en otras lenguas, según el Espíritu les daba que hablasen
+
+1 Corintios 13:1 Si yo hablase lenguas humanas y angélicas, y no tengo amor, vengo a ser como metal que resuena, o címbalo que retiñe.
+
+1. Corintios: 39-40 39 Así que, hermanos, procurad profetizar, y no impidáis el hablar lenguas; 40 pero hágase todo decentemente y con orden.
+
+Con señales, milagros y prodigios:
+Marcos 16:17 Y estas señales seguirán a los que creen: En mi nombre echarán fuera demonios; hablarán nuevas lenguas;
+Hechos 2:43 Y sobrevino temor a toda persona; y muchas maravillas y señales eran hechas por los apóstoles.
+ 
+Una boda, un esposo, una esposa.
+Mateo 19: 9-12 9 Y yo os digo que cualquiera que repudia a su mujer, salvo por causa de fornicación, y se casa con otra, adultera; y el que se casa con la repudiada, adultera 10 Le dijeron sus discípulos: Si así es la condición del hombre con su mujer, no conviene casarse. 11 Entonces él les dijo: No todos son capaces de recibir esto, sino aquellos a quienes es dado. 12 Pues hay eunucos que nacieron así del vientre de su madre, y hay eunucos que son hechos eunucos por los hombres, y hay eunucos que a sí mismos se hicieron eunucos por causa del reino de los cielos. El que sea capaz de recibir esto, que lo reciba.
+</p>
+      <p>Horarios de servicio: martes, jueves y sábado hora a partir de la 7 PM. estamos úbicados en la calle Fernandez Dominguez #52, Los Frailes II, Santo Domingo Este.  Nuestras redes sociales son: Facebook: iglesiapentecostalipla, Instagram: iglesiapentecostalipla, youtube: iglesiapentecostalipla, Tiktok: ipla iglesia pentecostal. Para oración y contacto Tel: 849-525-1871 .</p>
     </div>
   </div>`;
 }
