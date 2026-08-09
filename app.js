@@ -268,7 +268,6 @@ function viewAcerca(){
       <p>Historia:  
 
 <p>Misión: la iglesia Lampara es a mis pies tu palabra, buscar las almas al predicar y esparcir el evangelio de Cristo "o la buena nueva de salvación"  y dirigir a un pueblo a la salvación compartiendo un evangelio limpio, no adulterado, agradable al SEÑOR y a SU CORDERO. Es tiempo de prepararse la venida del SEÑOR está mas cerca que nunca</p>
-<p> Mateo: 25 5:7 "5 Y tardándose el esposo, cabecearon todas y se durmieron. 6 Y a la medianoche se oyó un clamor: ¡Aquí viene el esposo; salid a recibirle! 7 Entonces todas aquellas vírgenes se levantaron, y arreglaron sus lámparas."</p>
 <p>Visión: Que seamos un pueblo, "un cuerpo" preparado, apto para la venida del SEÑOR JESUCRISTO y haciendo la obra del SEÑOR estar listos para vivir eternamente con EL. Entregar al cordero en aquel día postrero una iglesia sin manchas ni arrugas. Siendo todos ovejas de su prado, en "Koinonia" los unos con los otros.</p>
 <p>Valores: La Iglesia Lámpara Es A Mis Pies Tú Palabra tiene como fundamento creer que La biblia es palabra de DIOS, misma que es nuestra ley de fé, doctrina y nuestro manual de vida. Siendo una Iglesia para testificar la grandeza de DIOS su evangelio y el cambio y milagro de su sacrificio en la vida del creyente.</p>
 <p>Paz y Santidad: Hebreos 12:14 Seguid la paz con todos, y la santidad, sin la cual nadie verá al Señor.</p>
