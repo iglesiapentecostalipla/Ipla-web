@@ -66,8 +66,8 @@ function viewInicio(){
   <section class="hero">
     <div class="hero-inner">
       <div>
-        <span class="hero-eyebrow">Iglesia Pentecostal Lámpara Es A Mis Pies Tu Palabra</span>
-        <h1>Palabra de DIOS, predicación, enseñanza, Noticias y <em>testimonio</em> a la luz de las Escrituras</h1>
+        <span class="hero-eyebrow">Iglesia Pentecostal Lámpara Es A Mis Pies Tu Pálabra</span>
+        <h1>Pálabra de DIOS, predicación, enseñanza, Noticias y <em>testimonio</em> a la luz de las Escrituras</h1>
         <p class="lead">Un espacio digital para exaltar a Dios y conocer lo que está haciendo en nuestra congregación: Mensajes en video, artículos, noticias todo en un mismo lugar.</p>
         <div class="hero-actions">
           <a href="#" data-view="noticias" class="btn btn-gold">Ver noticias</a>
@@ -262,14 +262,14 @@ function viewAcerca(){
   return `
   <div class="detail-wrap">
     <span class="eyebrow">Nuestra iglesia</span>
-    <h1>Iglesia Pentecostal Lámpara Es A Mis Pies Tu Palabra</h1>
-    <p class="about-lede"> Salmos 119:105 — «Lámpara es a mis pies tu palabra, y lumbrera a mi camino»</p>
+    <h1>Iglesia Pentecostal Lámpara Es A Mis Pies Tu Pálabra</h1>
+    <p class="about-lede"> Salmos 119:105 — «Lámpara es a mis pies tu Pálabra, y lumbrera a mi camino»</p>
     <div class="detail-body">
       <p>Historia:  
 
-<p>Misión: la iglesia Lampara es a mis pies tu palabra, buscar las almas al predicar y esparcir el evangelio de Cristo "o la buena nueva de salvación"  y dirigir a un pueblo a la salvación compartiendo un evangelio limpio, no adulterado, agradable al SEÑOR y a SU CORDERO. Es tiempo de prepararse la venida del SEÑOR está mas cerca que nunca</p>
+<p>Misión: la iglesia Lampara es a mis pies tu Pálabra, buscar las almas al predicar y esparcir el evangelio de Cristo "o la buena nueva de salvación"  y dirigir a un pueblo a la salvación compartiendo un evangelio limpio, no adulterado, agradable al SEÑOR y a SU CORDERO. Es tiempo de prepararse la venida del SEÑOR está mas cerca que nunca</p>
 <p>Visión: Que seamos un pueblo, "un cuerpo" preparado, apto para la venida del SEÑOR JESUCRISTO y haciendo la obra del SEÑOR estar listos para vivir eternamente con EL. Entregar al cordero en aquel día postrero una iglesia sin manchas ni arrugas. Siendo todos ovejas de su prado, en "Koinonia" los unos con los otros.</p>
-<p>Valores: La Iglesia Lámpara Es A Mis Pies Tú Palabra tiene como fundamento creer que La biblia es palabra de DIOS, misma que es nuestra ley de fé, doctrina y nuestro manual de vida. Ser una Iglesia que testifique la grandeza de DIOS el poder de su evangelio, y el milagro del cambio en la vida del creyente.</p>
+<p>Valores: La Iglesia Lámpara Es A Mis Pies Tú Pálabra tiene como fundamento creer que La biblia es Pálabra de DIOS, misma que es nuestra ley de fé, doctrina y nuestro manual de vida. Ser una Iglesia que testifique la grandeza de DIOS el poder de su evangelio, y el milagro del cambio en la vida del creyente.</p>
 <p>Paz y Santidad: Hebreos 12:14 Seguid la paz con todos, y la santidad, sin la cual nadie verá al Señor.</p>
 <p>Vivir la sana doctrina: 2 Timoteo 4:3 Porque vendrá tiempo cuando no sufrirán la sana doctrina, sino que teniendo comezón de oír, se amontonarán maestros conforme a sus propias concupiscencias,</p>
 <p>En Amor: 1 corintios 13: 8-10 8 El amor nunca deja de ser; pero las profecías se acabarán, y cesarán las lenguas, y la ciencia acabará. 9 Porque en parte conocemos, y en parte profetizamos; 10 mas cuando venga lo perfecto, entonces lo que es en parte se acabará.
