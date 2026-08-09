@@ -263,28 +263,23 @@ function viewAcerca(){
   <div class="detail-wrap">
     <span class="eyebrow">Nuestra iglesia</span>
     <h1>Iglesia Pentecostal Lámpara Es A Mis Pies Tu Palabra</h1>
-    <p class="about-lede">«Lámpara es a mis pies tu palabra, y lumbrera a mi camino» — Salmos 119:105</p>
+    <p class="about-lede"> Salmos 119:105 — «Lámpara es a mis pies tu palabra, y lumbrera a mi camino»</p>
     <div class="detail-body">
       <p>Historia:  
 
-<p>Misión: la iglesia Lampara es a mis pies tu palabra, buscar las almas al predicar y esparcir el evangelio de Cristo "o la buena nueva de salvación"  y dirigir a un pueblo a la salvación y a los brazos de su redentor, compartiendo un evangelio limpio, no adulterado, agradable al SEÑOR y a SU CORDERO. Es tiempo de prepararse la venida del SEÑOR está mas cerca que nunca,  Mateo: 25 5:7 "5 Y tardándose el esposo, cabecearon todas y se durmieron. 6 Y a la medianoche se oyó un clamor: ¡Aquí viene el esposo; salid a recibirle! 7 Entonces todas aquellas vírgenes se levantaron, y arreglaron sus lámparas."</p>
-
+<p>Misión: la iglesia Lampara es a mis pies tu palabra, buscar las almas al predicar y esparcir el evangelio de Cristo "o la buena nueva de salvación"  y dirigir a un pueblo a la salvación</p>
+<p>compartiendo un evangelio limpio, no adulterado, agradable al SEÑOR y a SU CORDERO. Es tiempo de prepararse la venida del SEÑOR está mas cerca que nunca</p>
+<p> Mateo: 25 5:7 "5 Y tardándose el esposo, cabecearon todas y se durmieron. 6 Y a la medianoche se oyó un clamor: ¡Aquí viene el esposo; salid a recibirle! 7 Entonces todas aquellas vírgenes se levantaron, y arreglaron sus lámparas."</p>
 <p>Visión: Que seamos un pueblo, "un cuerpo" preparado, apto para la venida del SEÑOR JESUCRISTO y haciendo la obra del SEÑOR estar listos para vivir eternamente con EL. Entregar al cordero en aquel día postrero una iglesia sin manchas ni arrugas. Siendo todos ovejas de su prado, en "Koinonia" los unos con los otros.</p>
-
 <p>Valores: La Iglesia Lámpara Es A Mis Pies Tú Palabra tiene como fundamento creer que La biblia es palabra de DIOS, misma que es nuestra ley de fé, doctrina y nuestro manual de vida. Siendo una Iglesia para testificar la grandeza de DIOS su evangelio y el cambio y milagro de su sacrificio en la vida del creyente.</p>
-<p>Paz y Santidad: </p>
-<p>Hebreos 12:14 Seguid la paz con todos, y la santidad, sin la cual nadie verá al Señor.</p>
-<p>Vivir la sana doctrina: </p>
-<p>2 Timoteo 4:3 Porque vendrá tiempo cuando no sufrirán la sana doctrina, sino que teniendo comezón de oír, se amontonarán maestros conforme a sus propias concupiscencias,</p>
+<p>Paz y Santidad: Hebreos 12:14 Seguid la paz con todos, y la santidad, sin la cual nadie verá al Señor.</p>
+<p>Vivir la sana doctrina: 2 Timoteo 4:3 Porque vendrá tiempo cuando no sufrirán la sana doctrina, sino que teniendo comezón de oír, se amontonarán maestros conforme a sus propias concupiscencias,</p>
 <p>En Amor: 1 corintios 13: 8-10 8 El amor nunca deja de ser; pero las profecías se acabarán, y cesarán las lenguas, y la ciencia acabará. 9 Porque en parte conocemos, y en parte profetizamos; 10 mas cuando venga lo perfecto, entonces lo que es en parte se acabará.
-<p>Hablando el lenguaje del cielo y el terrenal.</p>
-<p>Marcos 16:17 Y estas señales seguirán a los que creen: En mi nombre echarán fuera demonios; hablarán nuevas lenguas;</p> 
-<p>Hechos 2:1-4</p> 
-<p>1 Cuando llegó el día de Pentecostés, estaban todos unánimes juntos. 2 Y de repente vino del cielo un estruendo como de un viento recio que soplaba, el cual llenó toda la casa donde estaban sentados; 3 y se les aparecieron lenguas repartidas, como de fuego, asentándose sobre cada uno de ellos. 4 Y fueron todos llenos del Espíritu Santo, y comenzaron a hablar en otras lenguas, según el Espíritu les daba que hablasen
+<p>Hablando el lenguaje del cielo y el terrenal.<p>Marcos 16:17 Y estas señales seguirán a los que creen: En mi nombre echarán fuera demonios; hablarán nuevas lenguas;</p> 
+<p>Hechos 2:1-4 1 Cuando llegó el día de Pentecostés, estaban todos unánimes juntos. 2 Y de repente vino del cielo un estruendo como de un viento recio que soplaba, el cual llenó toda la casa donde estaban sentados; 3 y se les aparecieron lenguas repartidas, como de fuego, asentándose sobre cada uno de ellos. 4 Y fueron todos llenos del Espíritu Santo, y comenzaron a hablar en otras lenguas, según el Espíritu les daba que hablasen
 <p>1 Corintios 13:1 Si yo hablase lenguas humanas y angélicas, y no tengo amor, vengo a ser como metal que resuena, o címbalo que retiñe.</p>
 <p>1. Corintios: 39-40 39 Así que, hermanos, procurad profetizar, y no impidáis el hablar lenguas; 40 pero hágase todo decentemente y con orden.</p>
-<p>Con señales, milagros y prodigios:</p>
-<p>Marcos 16:17 Y estas señales seguirán a los que creen: En mi nombre echarán fuera demonios; hablarán nuevas lenguas;</p>
+<p>Con señales, milagros y prodigios: Marcos 16:17 Y estas señales seguirán a los que creen: En mi nombre echarán fuera demonios; hablarán nuevas lenguas;</p>
 <p>Hechos 2:43 Y sobrevino temor a toda persona; y muchas maravillas y señales eran hechas por los apóstoles.</p>
 <p>Una boda, un esposo, una esposa.</p>
 <p>Mateo 19: 9-12 9 Y yo os digo que cualquiera que repudia a su mujer, salvo por causa de fornicación, y se casa con otra, adultera; y el que se casa con la repudiada, adultera 10 Le dijeron sus discípulos: Si así es la condición del hombre con su mujer, no conviene casarse. 11 Entonces él les dijo: No todos son capaces de recibir esto, sino aquellos a quienes es dado. 12 Pues hay eunucos que nacieron así del vientre de su madre, y hay eunucos que son hechos eunucos por los hombres, y hay eunucos que a sí mismos se hicieron eunucos por causa del reino de los cielos. El que sea capaz de recibir esto, que lo reciba.
