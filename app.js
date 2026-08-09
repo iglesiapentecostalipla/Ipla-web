@@ -1,106 +1,308 @@
 /* =========================================================================
-   CONTENIDO DEL SITIO — IPLA
-   -------------------------------------------------------------------------
-   Edita este archivo para publicar contenido nuevo. No necesitas tocar
-   el HTML ni el CSS. Guarda los cambios y vuelve a subir el proyecto
-   a Vercel (o conecta un repositorio de GitHub para que se actualice
-   automáticamente).
-
-   Formatos de fecha: "AAAA-MM-DD" (ej: "2026-08-01")
-   Para imágenes: coloca el archivo en la carpeta /images y escribe
-   la ruta, ej: "images/mi-foto.jpg"
+   IPLA — LÓGICA DE LA APLICACIÓN
+   No es necesario editar este archivo para publicar contenido.
+   Para publicar, edita content.js
    ========================================================================= */
 
-const SITE_CONTENT = {
+const app = document.getElementById("app");
+const mainNav = document.getElementById("mainNav");
+const menuToggle = document.getElementById("menuToggle");
 
-  /* ---------------------------------------------------------------------
-     NOTICIAS — anuncios y novedades de la iglesia
-     "destacado: true" muestra la noticia en grande en Inicio
-  --------------------------------------------------------------------- */
-  noticias: [
-    {
-      id: "n1",
-      titulo: "Nuevo ciclo de estudios bíblicos comienza este mes",
-      categoria: "Vida de iglesia",
-      fecha: "2026-08-01",
-      resumen: "Iniciamos un recorrido por el libro de los Salmos, con encuentros semanales abiertos a toda la congregación y visitantes.",
-      contenido: "Este es un texto de ejemplo. Reemplázalo con el contenido real de tu noticia: horarios, lugar, responsables y cualquier detalle que la congregación necesite conocer.",
-      imagen: "",
-      destacado: true
-    },
-    {
-      id: "n2",
-      titulo: "Jornada de servicio comunitario",
-      categoria: "Comunidad",
-      fecha: "2026-07-20",
-      resumen: "Un equipo de voluntarios llevó ayuda y palabra de aliento a familias del sector. Así vivimos la fe en acción.",
-      contenido: "Texto de ejemplo. Cuenta aquí cómo se desarrolló la actividad, quiénes participaron y los resultados obtenidos.",
-      imagen: "",
-      destacado: false
-    },
-    {
-      id: "n3",
-      titulo: "Convocatoria: coro y ministerio de alabanza",
-      categoria: "Anuncios",
-      fecha: "2026-07-10",
-      resumen: "Se abren nuevos cupos para quienes deseen servir en el ministerio de alabanza. Ensayos todos los jueves.",
-      contenido: "Texto de ejemplo. Añade requisitos, horarios de ensayo y datos de contacto para quienes deseen inscribirse.",
-      imagen: "",
-      destacado: false
-    }
-  ],
+document.getElementById("year").textContent = new Date().getFullYear();
 
-  /* ---------------------------------------------------------------------
-     ARTÍCULOS
-     tipo: "interno"  -> el contenido se muestra dentro de esta página
-     tipo: "externo"  -> la tarjeta enlaza a un artículo en otro sitio
-  --------------------------------------------------------------------- */
-  articulos: [
-    {
-      id: "a1",
-      titulo: "Salmos 119: la lámpara que guía nuestros pasos",
-      tipo: "interno",
-      autor: "Equipo editorial IPLA",
-      fecha: "2026-07-28",
-      resumen: "Un recorrido devocional por el salmo que da nombre a nuestra congregación y su llamado a vivir a la luz de la Palabra.",
-      contenido: "Texto de ejemplo para un artículo interno. Aquí puedes escribir el artículo completo con varios párrafos. Simplemente reemplaza este texto por el contenido real; el sitio respeta saltos de línea dobles como párrafos nuevos.\n\nPuedes agregar tantos párrafos como necesites.",
-      imagen: "",
-      fuenteNombre: ""
-    },
-    {
-      id: "a2",
-      titulo: "Ejemplo de artículo enlazado a un sitio externo",
-      tipo: "externo",
-      autor: "Fuente externa",
-      fecha: "2026-07-15",
-      resumen: "Así se ve una tarjeta que enlaza a un artículo publicado en otra página web. Cambia el título, resumen y el enlace 'url' por los reales.",
-      url: "https://example.com",
-      fuenteNombre: "Nombre del sitio externo",
-      imagen: ""
-    }
-  ],
+/* ---------- helpers ---------- */
+function fmtDate(iso){
+  try{
+    const d = new Date(iso + "T00:00:00");
+    return d.toLocaleDateString("es-ES", { day:"numeric", month:"long", year:"numeric" });
+  }catch(e){ return iso; }
+}
+function byDateDesc(a,b){ return new Date(b.fecha) - new Date(a.fecha); }
+function escapeHtml(str){
+  return (str || "").replace(/[&<>"']/g, s => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+  }[s]));
+}
+function paragraphs(text){
+  return (text || "").split(/\n\s*\n/).map(p => `<p>${escapeHtml(p)}</p>`).join("");
+}
 
-  /* ---------------------------------------------------------------------
-     VIDEOS — deben estar subidos (o programados) en YouTube.
-     Copia solo el ID del video, no la URL completa.
-     Ej: en https://youtu.be/dQw4w9WgXcQ  el ID es  dQw4w9WgXcQ
-  --------------------------------------------------------------------- */
-  videos: [
-    {
-      id: "v1",
-      titulo: "Video de ejemplo — reemplaza por tu prédica o mensaje",
-      categoria: "Prédicas",
-      fecha: "2026-07-27",
-      descripcion: "Descripción breve del video. Cuéntale a la audiencia de qué trata antes de que le den play.",
-      youtubeId: "dQw4w9WgXcQ"
-    },
-    {
-      id: "v2",
-      titulo: "Video de ejemplo — alabanza y adoración",
-      categoria: "Alabanza",
-      fecha: "2026-07-13",
-      descripcion: "Descripción breve del segundo video de ejemplo.",
-      youtubeId: "dQw4w9WgXcQ"
-    }
-  ]
-};
+/* ---------- routing ---------- */
+function currentRoute(){
+  const hash = window.location.hash.replace("#/", "").replace("#", "");
+  if(!hash) return { view:"inicio" };
+  const parts = hash.split("/");
+  return { view: parts[0] || "inicio", id: parts[1] || null };
+}
+
+function navigateTo(view, id){
+  window.location.hash = id ? `/${view}/${id}` : `/${view}`;
+}
+
+window.addEventListener("hashchange", render);
+document.addEventListener("click", (e) => {
+  const link = e.target.closest("[data-view]");
+  if(link){
+    e.preventDefault();
+    navigateTo(link.getAttribute("data-view"));
+    mainNav.classList.remove("is-open");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+});
+menuToggle.addEventListener("click", () => {
+  const open = mainNav.classList.toggle("is-open");
+  menuToggle.setAttribute("aria-expanded", open);
+});
+
+/* ---------- view templates ---------- */
+function viewInicio(){
+  const noticias = [...SITE_CONTENT.noticias].sort(byDateDesc);
+  const destacada = noticias.find(n => n.destacado) || noticias[0];
+  const resto = noticias.filter(n => n.id !== destacada?.id).slice(0,4);
+  const articulos = [...SITE_CONTENT.articulos].sort(byDateDesc).slice(0,3);
+  const videos = [...SITE_CONTENT.videos].sort(byDateDesc).slice(0,2);
+
+  return `
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-eyebrow">Iglesia Pentecostal Lámpara</span>
+        <h1>Noticias, palabra y <em>testimonio</em> a la luz de las Escrituras</h1>
+        <p class="lead">Un espacio digital para conocer lo que Dios está haciendo en nuestra congregación: noticias, artículos y mensajes en video, todo en un mismo lugar.</p>
+        <div class="hero-actions">
+          <a href="#" data-view="noticias" class="btn btn-gold">Ver noticias</a>
+          <a href="#" data-view="videos" class="btn btn-outline">Ver videos</a>
+        </div>
+      </div>
+      <div class="hero-lamp">
+        <img src="images/logo-red.jpeg" alt="Logo IPLA">
+      </div>
+    </div>
+  </section>
+
+  <div class="lamp-divider"><span class="dot"></span></div>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <div><span class="eyebrow">Actualidad</span><h2>Últimas noticias</h2></div>
+        <a href="#" data-view="noticias" class="see-all">Ver todas</a>
+      </div>
+      ${destacada ? `
+      <div class="featured-news">
+        <article class="featured-card is-clickable" data-view="noticias" data-id="${destacada.id}">
+          <span class="tag">${escapeHtml(destacada.categoria)}</span>
+          <h3>${escapeHtml(destacada.titulo)}</h3>
+          <p>${escapeHtml(destacada.resumen)}</p>
+          <span class="date">${fmtDate(destacada.fecha)}</span>
+        </article>
+        <div class="news-list">
+          ${resto.map(n => `
+            <div class="news-row is-clickable" data-view="noticias" data-id="${n.id}">
+              <span class="date-badge">${fmtDate(n.fecha)}</span>
+              <div class="body">
+                <h4>${escapeHtml(n.titulo)}</h4>
+                <p>${escapeHtml(n.resumen)}</p>
+              </div>
+            </div>`).join("")}
+        </div>
+      </div>` : `<div class="empty-state">Aún no hay noticias publicadas. Edita content.js para añadir la primera.</div>`}
+    </div>
+  </section>
+
+  <div class="lamp-divider"><span class="dot"></span></div>
+
+  <section class="section alt">
+    <div class="section-inner">
+      <div class="section-head">
+        <div><span class="eyebrow">Reflexión escrita</span><h2>Artículos</h2></div>
+        <a href="#" data-view="articulos" class="see-all">Ver todos</a>
+      </div>
+      <div class="card-grid">
+        ${articulos.map(cardArticulo).join("") || `<div class="empty-state">Aún no hay artículos publicados.</div>`}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <div><span class="eyebrow">Mensajes</span><h2>Videos recientes</h2></div>
+        <a href="#" data-view="videos" class="see-all">Ver todos</a>
+      </div>
+      <div class="video-grid">
+        ${videos.map(cardVideo).join("") || `<div class="empty-state">Aún no hay videos publicados.</div>`}
+      </div>
+    </div>
+  </section>
+  `;
+}
+
+function viewNoticiasList(){
+  const noticias = [...SITE_CONTENT.noticias].sort(byDateDesc);
+  return `
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-head"><div><span class="eyebrow">Iglesia</span><h2>Noticias</h2></div></div>
+      <div class="card-grid">
+        ${noticias.map(n => `
+          <article class="card is-clickable" data-view="noticias" data-id="${n.id}">
+            <span class="cat">${escapeHtml(n.categoria)}</span>
+            <h3>${escapeHtml(n.titulo)}</h3>
+            <p>${escapeHtml(n.resumen)}</p>
+            <div class="meta"><span>${fmtDate(n.fecha)}</span><span>Leer más →</span></div>
+          </article>`).join("") || `<div class="empty-state">Aún no hay noticias.</div>`}
+      </div>
+    </div>
+  </section>`;
+}
+
+function viewNoticiaDetail(id){
+  const n = SITE_CONTENT.noticias.find(x => x.id === id);
+  if(!n) return notFound("noticias");
+  return `
+  <div class="detail-wrap">
+    <a href="#" data-view="noticias" class="detail-back">← Volver a noticias</a>
+    <span class="eyebrow">${escapeHtml(n.categoria)}</span>
+    <h1>${escapeHtml(n.titulo)}</h1>
+    <div class="detail-meta"><span>${fmtDate(n.fecha)}</span></div>
+    ${n.imagen ? `<img src="${n.imagen}" alt="" style="border-radius:4px;margin-bottom:28px;">` : ""}
+    <div class="detail-body">${paragraphs(n.contenido)}</div>
+  </div>`;
+}
+
+function cardArticulo(a){
+  const isExterno = a.tipo === "externo";
+  return `
+    <article class="card is-clickable" ${isExterno ? "" : `data-view="articulos" data-id="${a.id}"`}>
+      <span class="cat">${isExterno ? "Enlace externo" : "Artículo"}</span>
+      <h3>${escapeHtml(a.titulo)}</h3>
+      <p>${escapeHtml(a.resumen)}</p>
+      <div class="meta">
+        <span>${fmtDate(a.fecha)}${a.autor ? " · " + escapeHtml(a.autor) : ""}</span>
+        ${isExterno
+          ? `<a class="link-out" href="${a.url}" target="_blank" rel="noopener">Ver original ↗</a>`
+          : `<span class="link-out" onclick="navigateTo('articulos','${a.id}')">Leer más →</span>`}
+      </div>
+    </article>`;
+}
+
+function viewArticulosList(){
+  const articulos = [...SITE_CONTENT.articulos].sort(byDateDesc);
+  return `
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-head"><div><span class="eyebrow">Reflexión escrita</span><h2>Artículos</h2></div></div>
+      <div class="card-grid">
+        ${articulos.map(cardArticulo).join("") || `<div class="empty-state">Aún no hay artículos.</div>`}
+      </div>
+    </div>
+  </section>`;
+}
+
+function viewArticuloDetail(id){
+  const a = SITE_CONTENT.articulos.find(x => x.id === id);
+  if(!a) return notFound("articulos");
+  if(a.tipo === "externo"){
+    return `
+    <div class="detail-wrap">
+      <a href="#" data-view="articulos" class="detail-back">← Volver a artículos</a>
+      <span class="eyebrow">Enlace externo</span>
+      <h1>${escapeHtml(a.titulo)}</h1>
+      <div class="detail-meta"><span>${fmtDate(a.fecha)}</span>${a.autor ? `<span>${escapeHtml(a.autor)}</span>`:""}</div>
+      <div class="detail-body"><p>${escapeHtml(a.resumen)}</p></div>
+      <div class="external-box">
+        Este artículo fue publicado originalmente en ${escapeHtml(a.fuenteNombre || "un sitio externo")}.
+        <br><a class="btn btn-gold" href="${a.url}" target="_blank" rel="noopener">Leer artículo completo ↗</a>
+      </div>
+    </div>`;
+  }
+  return `
+  <div class="detail-wrap">
+    <a href="#" data-view="articulos" class="detail-back">← Volver a artículos</a>
+    <span class="eyebrow">Artículo</span>
+    <h1>${escapeHtml(a.titulo)}</h1>
+    <div class="detail-meta"><span>${fmtDate(a.fecha)}</span>${a.autor ? `<span>${escapeHtml(a.autor)}</span>`:""}</div>
+    ${a.imagen ? `<img src="${a.imagen}" alt="" style="border-radius:4px;margin-bottom:28px;">` : ""}
+    <div class="detail-body">${paragraphs(a.contenido)}</div>
+  </div>`;
+}
+
+function cardVideo(v){
+  return `
+    <article class="video-card">
+      <div class="video-frame-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.youtubeId)}"
+          title="${escapeHtml(v.titulo)}" loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="video-info">
+        <span class="cat">${escapeHtml(v.categoria)}</span>
+        <h3>${escapeHtml(v.titulo)}</h3>
+        <p>${escapeHtml(v.descripcion)} · ${fmtDate(v.fecha)}</p>
+      </div>
+    </article>`;
+}
+
+function viewVideos(){
+  const videos = [...SITE_CONTENT.videos].sort(byDateDesc);
+  return `
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-head"><div><span class="eyebrow">Mensajes</span><h2>Videos</h2></div></div>
+      <div class="video-grid">
+        ${videos.map(cardVideo).join("") || `<div class="empty-state">Aún no hay videos publicados.</div>`}
+      </div>
+    </div>
+  </section>`;
+}
+
+function viewAcerca(){
+  return `
+  <div class="detail-wrap">
+    <span class="eyebrow">Nuestra iglesia</span>
+    <h1>Iglesia Pentecostal Lámpara</h1>
+    <p class="about-lede">«Lámpara es a mis pies tu palabra, y lumbrera a mi camino» — Salmos 119:105</p>
+    <div class="detail-body">
+      <p>Este es un espacio de ejemplo para contar la historia, visión y valores de la congregación. Reemplaza este texto en la función <code>viewAcerca()</code> del archivo app.js, o pídele a Claude que lo convierta en un campo editable dentro de content.js.</p>
+      <p>Añade aquí horarios de servicio, dirección, redes sociales y formas de contacto.</p>
+    </div>
+  </div>`;
+}
+
+function notFound(back){
+  return `<div class="detail-wrap"><div class="empty-state">Contenido no encontrado. <br><a href="#" data-view="${back}" style="color:var(--wine)">← Volver</a></div></div>`;
+}
+
+/* ---------- render ---------- */
+function render(){
+  const { view, id } = currentRoute();
+
+  document.querySelectorAll(".nav-link").forEach(a => {
+    a.classList.toggle("is-active", a.getAttribute("data-view") === view);
+  });
+
+  let html = "";
+  if(view === "inicio") html = viewInicio();
+  else if(view === "noticias" && id) html = viewNoticiaDetail(id);
+  else if(view === "noticias") html = viewNoticiasList();
+  else if(view === "articulos" && id) html = viewArticuloDetail(id);
+  else if(view === "articulos") html = viewArticulosList();
+  else if(view === "videos") html = viewVideos();
+  else if(view === "acerca") html = viewAcerca();
+  else html = viewInicio();
+
+  app.innerHTML = html;
+}
+
+/* clickable cards/rows without an explicit <a> */
+document.addEventListener("click", (e) => {
+  const el = e.target.closest(".is-clickable[data-id]");
+  if(el && !e.target.closest("a")){
+    navigateTo(el.getAttribute("data-view"), el.getAttribute("data-id"));
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+});
+
+render();
