@@ -262,7 +262,7 @@ function viewAcerca(){
   return `
   <div class="detail-wrap">
     <span class="eyebrow">Nuestra iglesia</span>
-    <h1>Iglesia Pentecostal Lámpara</h1>
+    <h1>Iglesia Pentecostal Lámpara Es A Mis Pies Tu Palabra</h1>
     <p class="about-lede"> Salmos 119:105 — «Lámpara es a mis pies tu Palabra, y lumbrera a mi camino»</p>
     <div class="detail-body">
       <p><strong>Misión:</strong> La iglesia Lámpara es a mis pies tu Palabra busca las almas al predicar y esparcir el evangelio de Cristo, "la buena nueva de salvación", y dirigir a un pueblo a la salvación compartiendo un evangelio limpio, no adulterado, agradable al SEÑOR y a SU CORDERO. Es tiempo de prepararse: la venida del SEÑOR está más cerca que nunca.</p>
